@@ -1,1 +1,1 @@
-DSGVO und IT Quiz in progress
+Datenschutz DSGVO und IT Quiz in progress
