@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Datenschutz Quiz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="start-screen">
+        <h1 class="heading">Datenschutz & IT Quiz</h1>
+        <div class="settings">
+          <label for="num-questions">Anzahl der Fragen:</label>
+          <select id="num-questions">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="20">30</option>
+            <option value="20">40</option>
+            <option value="20">50</option>
+          </select>
+          <label for="category">Wähle die Kategorie:</label>
+          <select id="category">
+            <option value="">Wähle Kategorie</option>
+            <option value="9">Mix</option>
+            <option value="10">Datenschutz</option>
+            <option value="11">IT</option>
+            <option value="12">Audit</option>
+            <option value="14">Datenschutzauditor</option>
+            <option value="15">CISO</option>
+            <option value="16">GDPR</option>
+            <option value="17">DSGVO</option>
+            <option value="18">DSG SChweiz</option>
+            <option value="19">mathematics</option>
+            <option value="20">mythology</option>
+            <option value="21">sports</option>
+            <option value="22">geography</option>
+            <option value="23">history</option>
+            <option value="24">politics</option>
+            <option value="25">art</option>
+            <option value="28">vehicles</option>
+          </select>
+          <label for="difficulty">Schwierigkeitsgrad:</label>
+          <select id="difficulty">
+            <option value="">Wähle Schwierigkeitsgrad</option>
+            <option value="easy">EINFACH</option>
+            <option value="medium">MEDIUM</option>
+            <option value="hard">SCHWER</option>
+          </select>
+          <label for="time">Zeit pro Frage:</label>
+          <select id="time">
+            <option value="10">10 Sec.</option>
+            <option value="15">15 Sec.</option>
+            <option value="20">20 Sec.</option>
+            <option value="25">25 Sec.</option>
+            <option value="30">30 Sec.</option>
+            <option value="60">60 Sec.</option>
+          </select>
+        </div>
+        <button class="btn start">Start</button>
+      </div>
+      <div class="quiz hide">
+        <div class="timer">
+          <div class="progress">
+            <div class="progress-bar"></div>
+            <span class="progress-text"></span>
+          </div>
+        </div>
+        <div class="question-wrapper">
+          <div class="number">
+            Question <span class="current">1</span>
+            <span class="total">/10</span>
+          </div>
+          <div class="question">This is a question This is a question?</div>
+        </div>
+        <div class="answer-wrapper">
+          <div class="answer selected">
+            <span class="text">Antwort</span>
+            <span class="checkbox">
+              <i class="fas fa-check"></i>
+            </span>
+          </div>
+        </div>
+        <button class="btn submit" disabled>Absenden</button>
+        <button class="btn next">Weiter</button>
+      </div>
+      <div class="end-screen hide">
+        <h1 class="heading">Quiz App</h1>
+        <div class="score">
+          <span class="score-text">Dein Ergebnis:</span>
+          <div>
+            <span class="final-score">0</span>
+            <span class="total-score">/10</span>
+          </div>
+        </div>
+        <button class="btn restart">Wiederhole Quiz</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
